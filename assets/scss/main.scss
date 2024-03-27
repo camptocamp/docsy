@@ -11,8 +11,10 @@
 @import "../vendor/Font-Awesome/scss/fontawesome.scss";
 @import "../vendor/Font-Awesome/scss/solid.scss";
 @import "../vendor/Font-Awesome/scss/brands.scss";
+@import "../vendor/Font-Awesome/scss/v4-shims.scss";
 
 @import "variables_project_after_bs";
+@import "variables_after_bs";
 
 @import "support/utilities";
 @import "colors";

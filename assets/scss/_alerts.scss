@@ -18,3 +18,45 @@
     }
   }
 }
+
+.admonitionblock {
+  &>table {
+    @extend .alert;
+
+    &>tbody>tr>td {
+      display: block;
+      border: none;
+      box-shadow: none !important;
+      color: inherit !important;
+      padding: 0 !important;
+
+      &.icon {
+        margin-bottom: 0.5rem;
+
+        &>i::before {
+          font-family: var(--bs-body-font-family);
+          font-style: normal;
+          font-size: 1.35em;
+          font-weight: 500;
+          line-height: 1.2;
+
+          content: attr(title);
+        }
+      }
+
+      &.content {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @each $color, $value in $theme-colors {
+    &.#{$color}>table {
+      @extend .alert-#{$color};
+
+      &>tbody>tr>td.icon>i::before {
+        color: $value;
+      }
+    }
+  }
+}
