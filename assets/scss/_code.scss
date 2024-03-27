@@ -2,7 +2,8 @@
 
 .td-content {
   // Highlighted code.
-  .highlight {
+  :not(.listingblock) .highlight,
+  .listingblock {
     @extend .card;
 
     margin: 2rem 0;
@@ -14,7 +15,8 @@
       text-align: right;
     }
 
-    pre {
+    pre,
+    pre.highlight {
       margin: 0;
       padding: 1rem;
       border-radius: inherit;
