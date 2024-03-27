@@ -11,6 +11,7 @@
 @import "../vendor/Font-Awesome/scss/fontawesome.scss";
 @import "../vendor/Font-Awesome/scss/solid.scss";
 @import "../vendor/Font-Awesome/scss/brands.scss";
+@import "../vendor/Font-Awesome/scss/v4-shims.scss";
 
 @import "variables_project_after_bs";
 
@@ -36,6 +37,7 @@
 @import "shortcodes";
 @import "swagger";
 @import "support/rtl";
+@import "asciidoc";
 
 
 @if $td-enable-google-fonts {
