@@ -1,0 +1,15 @@
+$admonition-note: $secondary !default;
+$admonition-tip: $info !default;
+$admonition-important: $primary !default;
+$admonition-caution: $warning !default;
+$admonition-warning: $danger !default;
+
+$admonition-colors: (
+	"note": $admonition-note,
+	"tip": $admonition-tip,
+	"important": $admonition-important,
+	"caution": $admonition-caution,
+	"warning": $admonition-warning,
+);
+
+$theme-colors: map-merge($theme-colors, $admonition-colors);
