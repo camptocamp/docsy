@@ -1,0 +1,41 @@
+.td-navbar {
+	.navbar-brand__logo {
+		fill: white;
+
+		svg {
+			height: 1em;
+		}
+	}
+
+	&.td-navbar-cover {
+		&:not(.navbar-bg-onscroll) {
+			.navbar-brand__logo {
+				fill: $orange;
+			}
+		}
+	}
+}
+
+// Add heading self links support for Asciidoc content
+h2,
+h3,
+h4,
+h5,
+h6 {
+	a.anchor {
+		@extend .td-heading-self-link;
+
+		display: inline-block;
+		width: 1.5em;
+		margin-left: -1.5em;
+
+		&::before {
+			@extend .fa-solid;
+
+			font-size: 0.8em;
+			vertical-align: middle;
+
+			content: '\f0c1';
+		}
+	}
+}
