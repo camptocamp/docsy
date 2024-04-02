@@ -1,0 +1,17 @@
+.td-navbar {
+	.navbar-brand__logo {
+		fill: white;
+
+		svg {
+			height: 1em;
+		}
+	}
+
+	&.td-navbar-cover {
+		&:not(.navbar-bg-onscroll) {
+			.navbar-brand__logo {
+				fill: $orange;
+			}
+		}
+	}
+}
