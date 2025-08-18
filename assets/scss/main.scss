@@ -3,6 +3,7 @@
 @import '../vendor/bootstrap/scss/functions';
 
 @import 'variables_forward';
+@import 'variables_camptocamp';
 @import 'variables_project';
 @import 'variables';
 @import 'support/mixins';
@@ -117,4 +118,5 @@
   }
 }
 
+@import 'styles_camptocamp';
 @import 'styles_project';
