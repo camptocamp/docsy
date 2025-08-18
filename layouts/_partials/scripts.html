@@ -59,6 +59,20 @@ window.markmap = {
 {{ end -}}
 
 {{ if .Site.Params.prism_syntax_highlighting -}}
+  <script>
+    [].slice.call(document.getElementsByClassName('listingblock')).
+      forEach(function (listingblock) {
+        listingblock.classList.add("highlight");
+        pre = listingblock.querySelector('pre.highlight');
+        pre.classList.add('highlight');
+
+        if (listingblock.classList.contains('command-line')) {
+          listingblock.classList.remove('command-line');
+          pre.classList.add('command-line');
+          pre.setAttribute('data-prompt', '$');
+        }
+      })
+  </script>
   <script src='{{ "js/prism.js" | relURL }}'></script>
 {{ else if ( not .Site.Params.disable_click2copy_chroma ) -}}
   {{ $c2cJS := resources.Get "js/click-to-copy.js" -}}
