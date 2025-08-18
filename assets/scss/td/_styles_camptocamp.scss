@@ -1,0 +1,11 @@
+@import 'td/extra';
+
+.td-navbar {
+  .navbar-brand__logo {
+    fill: $primary;
+
+    svg {
+      height: 1em;
+    }
+  }
+}
