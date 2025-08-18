@@ -3,6 +3,7 @@
 @import '../../vendor/bootstrap/scss/functions';
 
 @import 'variables_forward';
+@import 'variables_camptocamp';
 @import '../variables_project';
 @import 'variables';
 @import 'support/mixins';
@@ -15,6 +16,7 @@
 @import '../../vendor/Font-Awesome/scss/brands';
 @import '../../vendor/Font-Awesome/scss/v4-shims';
 
+@import 'variables_camptocamp_after_bs';
 @import '../variables_project_after_bs';
 
 @import 'support/utilities';
@@ -47,4 +49,5 @@
   @import url($td-web-font-path);
 }
 
+@import 'styles_camptocamp';
 @import '../styles_project';
